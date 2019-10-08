@@ -1,0 +1,26 @@
+/* Body is an element */
+
+body {
+    background-color: yellowgreen;
+}
+
+
+/* for CLASSES. Always the latest which is taken into account
+*/
+
+.title-page {
+    color: red;
+}
+
+
+/*# for ID
+*/
+
+.span-class {
+    color: aqua;
+}
+
+#my-page {
+    color: blue;
+    display: inline;
+}
