@@ -10,10 +10,15 @@
 
 .navigation {
     background-color: #333;
-    /*position: fixed;*/
+    position: fixed;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #959595;
+    width: 100%;
+    /*
+    top: 0;
+    left: 0;
+    right: 0;*/
 }
 
 .navigation span a {
@@ -87,11 +92,23 @@
     color: black;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 36px;
-    margin: 40px 0px 20;
-    padding: 0px 0px 20px;
 }
 
-.section1 h3 {
+.row {
+    display: block;
+    white-space: nowrap;
+}
+
+.column {
+    display: inline-grid;
+    width: 33.33333333333%;
+}
+
+.column img {
+    width: 100%;
+}
+
+.column h3 {
     color: #959595;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -99,51 +116,7 @@
     display: inline;
 }
 
-.section1 span {
-    padding-left: 10px;
-    display: inline;
-    vertical-align: baseline;
-}
-
-.section1 span img {
-    width: 600px;
-    height: 250px;
-}
-
-.section1 span h3 {
-    color: #337AB7;
-    margin: 0px 0px 10px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 24px;
-}
-
-.myarticle {
-    color: #959595;
-    margin: 0px 0px 10px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-}
-
-.section2 {
-    background-color: #DAA520;
-    padding-top: 60px;
-    padding-left: 10px;
-    padding-bottom: 60px;
-}
-
-.section2 span {
-    color: #000000;
-    display: inline;
-}
-
-.myarticle2 {
-    color: #000000;
-    margin: 0px 0px 10px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-}
-
-.section2 span p {
+.column p {
     color: #000000;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
@@ -151,12 +124,34 @@
     margin-top: 10px;
 }
 
-.section2 span button {
+.myarticle {
+    color: #959595;
+    margin: 0px 0px 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    white-space: normal;
+}
+
+.section2 {
+    background-color: #DAA520;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 60px;
+}
+
+.myarticle2 {
+    color: #000000;
+    margin: 0px 0px 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    white-space: normal;
+}
+
+.mybutton {
     background-color: #FFFF;
     color: #333333;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
-    display: inline-block;
     padding: 6px 12px;
     font-weight: 400;
     text-align: center;
@@ -164,6 +159,8 @@
     line-height: 1.3;
     border: 1px solid transparent;
     border-radius: 4px;
+    display: inline-grid;
+    width: 33.33333333333%;
 }
 
 .footer {
