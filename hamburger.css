@@ -1,0 +1,39 @@
+       .hamburger {
+           /*border: 2px solid red;
+            margin: 100px auto 200px;*/
+           background-color: #fff;
+           width: 300px;
+           height: 150px;
+           position: relative;
+           cursor: pointer;
+       }
+       
+       .line {
+           height: 5px;
+           width: 300px;
+           background-color: blue;
+           top: 0;
+           bottom: 0;
+           margin: auto;
+           position: absolute;
+       }
+       
+       .hamburger:hover .line:first-child {
+           transform: rotate(45deg);
+       }
+       
+       .hamburger:hover .line:last-child {
+           transform: rotate(-45deg);
+       }
+       
+       .hamburger .line:first-child {
+           top: auto;
+       }
+       
+       .hamburger .line:last-child {
+           bottom: auto;
+       }
+       
+       .hamburger:hover .line:nth-child(2) {
+           opacity: 0;
+       }

@@ -1,11 +1,27 @@
 * {
     margin: 0;
     padding: 0;
+    /* CREATE A SQUARE
+    border: 2px solid red;
+    margin: 100px auto 200px;
+    background-color: greenyellow;
+    left: 100%;
+    */
 }
+
+
+/*
+Please refer to  git clone https://github.com/Poulycroc/firstHtmlLesson 
+branch poulycroc-features
+*/
+
+
+/* because we defined <meta name="viewport" content="width=device-width, initial-scale=1"> in the HTML*/
 
 
 /*body {
     padding-top: 60px;
+    
 }*/
 
 .navigation {
@@ -96,6 +112,33 @@
     font-size: 36px;
 }
 
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+/*TIPS*/
+
+
+/*
+.row:last-child {
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+}*/
+
+
+/*
+.row:hover {
+    background-color: pink;
+    transition: 1000ms;
+    transition: ease-out 1200ms;
+    tranform: rotate(45deg);
+    transform: rotate(-45deg);
+}
+*/
+
 .row {
     display: block;
     white-space: nowrap;
@@ -103,7 +146,7 @@
 
 .column {
     display: inline-grid;
-    width: 33.33333333333%;
+    width: 34%;
 }
 
 .column img {
@@ -121,7 +164,7 @@
 .column p {
     color: #000000;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 24px;
+    font-size: 21px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -137,7 +180,7 @@
 .section2 {
     background-color: #DAA520;
     padding-top: 40px;
-    padding-left: 10px;
+    /*padding-left: 10px;*/
     padding-bottom: 60px;
 }
 
@@ -168,6 +211,7 @@
 .footer {
     background-color: #fff;
     padding: 30px 0;
+    display: block;
 }
 
 .footer span {
@@ -190,4 +234,26 @@
     color: #959595;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
+}
+
+@media screen and (max-wdth: 800px) {
+    body {
+        display: block;
+    }
+    /*you can add classes here*/
+    .not_mobile {
+        display: none;
+    }
+    .not_desktop {
+        display: block;
+    }
+    .row {
+        width: 100%;
+        display: block;
+        white-space: normal;
+    }
+    .column {
+        display: grid;
+        width: 100%;
+    }
 }
